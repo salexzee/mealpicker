@@ -6,6 +6,6 @@ block content
     h3 Randomize where you eat.
 
     form(id="pick", method="get", action="/api")
-      input(type="text", placeholder="Zip Code", id="zip", name="zip",required, autofocus)
+      input(type="text", pattern="[0-9]{5,5}", placeholder="Zip Code", id="zip", name="zip",required, autofocus)
       br
       button Find Food
