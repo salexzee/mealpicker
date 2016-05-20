@@ -23,7 +23,7 @@ app.set('view engine', 'jade')
 app.get('/api*', (req, res) => {
 
   // Variable object for display page
-  const variables = {}
+  let variables = {}
   // Options for request()
   const options = {
     url: `https://api.locu.com/v1_0/venue/search/?api_key=a114be2b432ef4309090339f1c226e16a626f67c&category=restaurant&postal_code=${req.query.zip}`,
@@ -37,22 +37,24 @@ app.get('/api*', (req, res) => {
       // Parses body as JSON
       var info = JSON.parse(body)
       // Grabs a random item
-      const item = utilities.randArrayItem(info.objects)
+      const item = utility.randArrayItem(info.objects)
       // Assign display page local variables
       variables.name = item.name
       variables.address = item.street_address
       variables.zip = item.postal_code
       variables.city = item.locality
-      variables.website = item.website
+      variables.website = item.website_url
       variables.phone = item.phone
+      console.log(variables)
+      // Renders the dislay page
+      res.render('display', variables)
     } else {
       console.log(error) // Needs real error handling
     }
   }
+  // Run it
+  request(options, callback);
 
-  //request(options, callback);
-  // Renders the display page
-  res.render('display', variables)
 })
 
 
