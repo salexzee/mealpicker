@@ -2,9 +2,15 @@ extends layout
 
 block content
   div.container.display
-    h1 #{name}
-    h3 #{address}
-    h3 #{zip}
-    h3 #{city}
-    h3 #{website}
-    h3 #{phone}
+    if name
+      h1 #{name}
+    if address
+      h3 #{address}
+    if zip
+      h3 #{zip}
+    if city
+      h3 #{city}
+    if website
+      h3 #{website}
+    if phone
+      h3 #{phone}
