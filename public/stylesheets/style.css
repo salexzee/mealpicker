@@ -1,8 +1,83 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #fcfcfc;
+}
+
+nav {
+  width: 100%;
+  padding-top: 20px;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+  background: #EFEFEF;
+  padding: 10px;
+  display: inline-block;
+  margin-left: 20px;
+  transition: .2s;
+}
+
+a:hover {
+  color: #00A6FF;
+  background: #E2E2E2;
+}
+
+.main {
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.index {
+  text-align: center;
+}
+
+.index h1 {
+  font-size: 7em;
+  margin: 70px 0 0 0;
+}
+
+.index h3 {
+  font-size: 2.6em;
+  margin: 0 0 20px 0;
+  color: #555;
+}
+
+input {
+  text-align: center;
+  font-size: 2.3em;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset; /* This line uses an oversized, inset box-shadow to get rid of the yellow background and replace it with the color of your choosing. */
+	-webkit-text-fill-color: #333 !important; /* This line lets you set your font color. Important if you have it set to anything other than black. */
+}
+
+button {
+  font-size: 2em;
+  padding: 10px;
+  color: #777;
+  border: 1px solid #777;
+  background: white;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: #555;
+  color: white;
 }

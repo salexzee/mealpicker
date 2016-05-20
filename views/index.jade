@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container.index
+    h1= title
+    h3 Randomize where you eat.
 
-  form(id="pick", method="get", action="/api")
-    input(type="text", placeholder="Zip Code", id="zip", name="zip",required, autofocus)
-    button Find Food
+    form(id="pick", method="get", action="/api")
+      input(type="text", placeholder="Zip Code", id="zip", name="zip",required, autofocus)
+      br
+      button Find Food
