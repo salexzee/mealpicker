@@ -4,13 +4,6 @@ block content
   h1= title
   p Welcome to #{title}
 
-  form(id="pick")
-    input(type="text", placeholder="City", name="location", id="location", required, autofocus)
-    select (name="term", id="category", required)
-      option(disabled, selected) Category
-      option(value="breakfast") Breakfast
-      option(value="lunch") Lunch
-      option(value="dinner") Dinner
-      option(disabled) ------------
-      option(value="Tacos") Tacos
+  form(id="pick", method="get", action="/api")
+    input(type="text", placeholder="Zip Code", id="zip", name="zip",required, autofocus)
     button Find Food

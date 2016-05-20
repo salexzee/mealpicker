@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'FoodPicker' });
 });
 
+router.get('/display', function(req, res, next) {
+  res.render('display')
+})
+
 module.exports = router;
