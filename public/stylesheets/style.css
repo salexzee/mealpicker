@@ -1,7 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
-  background: #fcfcfc;
+  background: #e3e3e3;
 }
 
 nav {
@@ -9,19 +9,19 @@ nav {
   padding-top: 20px;
 }
 
-a {
-  color: #00B7FF;
+nav a {
+  color: white;
   text-decoration: none;
-  background: #EFEFEF;
+  background: #666;
   padding: 10px;
   display: inline-block;
   margin-left: 20px;
   transition: .2s;
 }
 
-a:hover {
-  color: #00A6FF;
-  background: #E2E2E2;
+nav a:hover {
+  color: #666;
+  background: white;
 }
 
 .main {
@@ -40,6 +40,7 @@ a:hover {
 .index h1 {
   font-size: 7em;
   margin: 70px 0 0 0;
+  color: #121212
 }
 
 .index h3 {
@@ -53,9 +54,11 @@ input {
   font-size: 2.3em;
   display: inline-block;
   margin-bottom: 20px;
-  color: #333;
+  color: #777;
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 2px solid #777;
+  background: white;
 }
 
 input:focus {
@@ -63,15 +66,15 @@ input:focus {
 }
 
 input:-webkit-autofill {
-	-webkit-box-shadow: 0 0 0px 1000px white inset; /* This line uses an oversized, inset box-shadow to get rid of the yellow background and replace it with the color of your choosing. */
-	-webkit-text-fill-color: #333 !important; /* This line lets you set your font color. Important if you have it set to anything other than black. */
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+	-webkit-text-fill-color: #777 !important;
 }
 
 button {
   font-size: 2em;
-  padding: 10px;
+  padding: 10px 30px;
   color: #777;
-  border: 1px solid #777;
+  border: 2px solid #777;
   background: white;
   cursor: pointer;
   transition: .2s;
