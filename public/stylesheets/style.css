@@ -6,7 +6,7 @@ body {
   margin: 0;
   background: #e3e3e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPElEQVQYV2NkIA5IMhKhTpKBgeE5IYVgRSDD8CmEK8KnEEURLoUYirApxKoIXSFORcgK8SqCKSSoCKQQAI9pCSQZzIwgAAAAAElFTkSuQmCC) repeat fixed;
   padding-bottom: 60px;
-  height: 100%;
+  min-height: 100%;
 }
 
 nav {
