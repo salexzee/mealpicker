@@ -9,6 +9,12 @@ body {
   min-height: 100%;
 }
 
+.gh-view {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 nav {
   width: 100%;
   padding-top: 20px;
