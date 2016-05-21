@@ -7,7 +7,6 @@ const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const request = require('request');
 // LOCAL REQUIRES
-const config_secrets = require('./config_secrets')
 const routes = require('./routes/index')
 const utility = require('./lib/utility')
 
@@ -39,6 +38,10 @@ app.get('/api*', (req, res) => {
       // Grabs a random item
       const item = utility.randArrayItem(info.objects)
       // Assign display page local variables
+      if(item === undefined) {
+        res.redirect('/')
+        return
+      }
       variables.name = item.name
       variables.address = item.street_address
       variables.zip = item.postal_code
