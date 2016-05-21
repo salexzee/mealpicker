@@ -7,7 +7,7 @@ const favicon = require('serve-favicon')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-const request = require('request');
+const request = require('request')
 // LOCAL REQUIRES
 const routes = require('./routes/index')
 const utility = require('./lib/utility')
