@@ -1,7 +1,12 @@
+html {
+  height: 100%;
+}
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
-  background: #e3e3e3;
+  background: #e3e3e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPElEQVQYV2NkIA5IMhKhTpKBgeE5IYVgRSDD8CmEK8KnEEURLoUYirApxKoIXSFORcgK8SqCKSSoCKQQAI9pCSQZzIwgAAAAAElFTkSuQmCC) repeat fixed;
+  padding-bottom: 60px;
+  height: 100%;
 }
 
 nav {
@@ -121,7 +126,7 @@ button:hover {
 
 footer {
   width: 100%;
-  background: #444;
+  background: hsla(0, 0%, 20%, .98);
   position: fixed;
   bottom: 0;
   left: 0;
