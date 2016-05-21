@@ -120,7 +120,8 @@ button:hover {
   transition: .2s;
 }
 
-.display a:hover {
+.display a:hover,
+.display .phone {
   color: #4892AB;
 }
 

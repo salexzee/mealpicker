@@ -8,7 +8,7 @@ block content
       section
         h3 Location:
         p
-          a(href="#{addressUrl}") #{address}, #{city} #{zip}
+          a(href="#{addressUrl}", target="_blank") #{address}, #{city} #{zip}
 
             
       hr
@@ -17,7 +17,7 @@ block content
       section
         h3 Visit their website:
         p 
-          a(href='#{website}') #{website}
+          a(href='#{website}', target="_blank") #{website}
     
       hr
     
@@ -25,4 +25,4 @@ block content
       section
         h3 Call for more information:
         p 
-          a(href='tel://#{phone}') #{phone}
+          span.phone #{phone}
