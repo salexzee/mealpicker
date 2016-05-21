@@ -4,13 +4,25 @@ block content
   div.container.display
     if name
       h1 #{name}
-    if address
-      h3 #{address}
-    if zip
-      h3 #{zip}
-    if city
-      h3 #{city}
+    if address && city
+      section
+        h3 Location:
+        p
+          a(href="#{addressUrl}") #{address}, #{city} #{zip}
+
+            
+      hr
+        
     if website
-      h3 #{website}
+      section
+        h3 Visit their website:
+        p 
+          a(href='#{website}') #{website}
+    
+      hr
+    
     if phone
-      h3 #{phone}
+      section
+        h3 Call for more information:
+        p 
+          a(href='tel://#{phone}') #{phone}

@@ -45,6 +45,7 @@ app.get('/api*', (req, res) => {
       variables.city = item.locality
       variables.website = item.website_url
       variables.phone = item.phone
+      variables.addressUrl = (`http://maps.google.com/?q=${item.street_address}, ${item.locality}, ${item.postal_code}`)
       console.log(variables)
       // Renders the dislay page
       res.render('display', variables)
