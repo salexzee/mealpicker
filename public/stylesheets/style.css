@@ -117,3 +117,29 @@ button:hover {
 .display a:hover {
   color: #4892AB;
 }
+
+footer {
+  width: 100%;
+  background: #444;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 25px 0;
+  color: #ddd;
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+footer p {
+  margin: 0 0 0 30px;
+  font-size: .9em;
+}
+
+footer a {
+  color: #ddd;
+  transition: .2s;
+}
+
+footer a:hover {
+  color: #4892AB;
+}
