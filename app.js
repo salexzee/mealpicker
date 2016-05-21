@@ -37,11 +37,14 @@ app.get('/api*', (req, res) => {
       var info = JSON.parse(body)
       // Grabs a random item
       const item = utility.randArrayItem(info.objects)
-      // Assign display page local variables
+
+      // If zip code does not exixt, redirect back home
       if(item === undefined) {
         res.redirect('/')
         return
       }
+
+      // Assign display page local variables
       variables.name = item.name
       variables.address = item.street_address
       variables.zip = item.postal_code
@@ -60,9 +63,6 @@ app.get('/api*', (req, res) => {
   request(options, callback);
 
 })
-
-
-
 
 
 // uncomment after placing your favicon in /public
