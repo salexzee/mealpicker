@@ -146,6 +146,7 @@ footer {
 footer p {
   margin: 0 0 0 30px;
   font-size: .9em;
+  display: inline-block;
 }
 
 footer a {
@@ -155,4 +156,10 @@ footer a {
 
 footer a:hover {
   color: #4892AB;
+}
+
+.twitter-share-button {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
 }
